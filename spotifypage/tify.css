@@ -1,0 +1,607 @@
+body {
+    margin: 0;
+    font-family: "Spotify Mix", "Circular", "Proxima Nova", "Montserrat", system-ui, sans-serif;
+    background-color: #121212;
+    color: white;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+.fullnav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.nav1part {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex: 1;
+}
+
+.logo i {
+    font-size: 32px;
+    color: #1DB954;
+    cursor: pointer;
+}
+
+.home i {
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.home i:hover {
+    color: #1DB954;
+}
+
+.searchbar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #242424;
+    border-radius: 25px;
+    padding: 6px 15px;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+    border: 2px solid white;
+}
+
+.searchbar i {
+    color: #b3b3b3;
+    font-size: 14px;
+}
+
+.searchbar input {
+    background: none;
+    border: none;
+    outline: none;
+    color: white;
+    width: 100%;
+    font-size: 14px;
+}
+
+.nav2part {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 40px;
+    flex: 1;
+    font-size: 14px;
+}
+
+.nav2part1 {
+    display: flex;
+    gap: 25px;
+}
+
+.nav2part1 div {
+    cursor: pointer;
+    transition: color 0.2s;
+    white-space: nowrap;
+}
+
+.nav2part1 div:hover {
+    color: #1DB954;
+}
+
+.nav3part2 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav3part2 div {
+    cursor: pointer;
+    transition: color 0.2s;
+    white-space: nowrap;
+}
+
+.nav3part2 div:hover {
+    color: #1DB954;
+}
+
+.install i {
+    margin-right: 5px;
+}
+
+.login {
+    border: 2px solid white;
+    margin: 10px;
+    padding: 10px;
+    width: 70px;
+    text-align: center;
+    border-radius: 50px;
+    background-color: white;
+    color: black;
+    font-size: 19px;
+    font-weight: 500;
+    font-family: "Spotify Mix", "Circular", "Proxima Nova", "Montserrat", system-ui, sans-serif;
+}
+
+.main {
+    display: flex;
+    margin-top: 80px;
+    height: calc(100vh - 80px);
+    width: 100%;
+}
+
+.sidebar {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 30%;
+    height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #00000069;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+.container {
+    position: fixed;
+    top: 80px;
+    right: 0;
+    width: 70%;
+    height: calc(100vh - 145px);
+    overflow-y: auto;
+    padding-left: 20px;
+    background-color: #121212;
+}
+
+.lib {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    width: 90%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 19px;
+    font-weight: 500;
+    background-color: #8d8c8c26;
+    border-radius: 5px;
+    color: lightblue;
+}
+
+.play {
+    width: 90%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    padding: 20px;
+    font-size: 19px;
+    font-weight: 500;
+    background-color: #8d8c8c26;
+    border-radius: 5px;
+    color: lightblue;
+}
+
+.create {
+    border: 2px solid white;
+    background-color: white;
+    width: 140px;
+    height: 24px;
+    color: #000;
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.let {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 90%;
+    height: 70px;
+    padding: 20px;
+    font-size: 19px;
+    overflow: auto;
+    overflow-y: scroll;
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
+    font-weight: 500;
+    background-color: #8d8c8c26;
+    border-radius: 5px;
+    color: lightblue;
+}
+
+.fon {
+    font-weight: 800;
+}
+
+.lmain {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 90%;
+    padding: 20px;
+    background-color: #8d8c8c26;
+    border-radius: 5px;
+}
+
+.legal, .abo {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 15px;
+    font-weight: 500;
+    color: lightblue;
+}
+
+.cook {
+    font-weight: 800;
+    color: lightgreen;
+}
+
+.eng {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    border: 2px solid rgb(90, 90, 209);
+    justify-content: center;
+    width: 30%;
+    height: 30px;
+    padding: 5px;
+    text-align: center;
+    font-weight: 700;
+    border-radius: 50px;
+    margin-top: 10px;
+}
+
+.eng i {
+    padding: 5px;
+    font-weight: 700;
+}
+
+.lib, .play, .let, .lmain {
+    box-shadow: rgba(108, 108, 108, 0.779) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.lib:hover, .play:hover, .let:hover, .lmain:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 255, 229, 0.6);
+}
+
+.create:hover, .eng:hover {
+    background-color: #1ed760;
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(30, 215, 96, 0.5);
+}
+
+.trending1{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    gap: 800px;
+    height: 30px;
+    font-family: "Spotify Mix", "Circular", "Proxima Nova", "Montserrat", system-ui, sans-serif;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.Songs {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.Songs::-webkit-scrollbar {
+    display: none;
+}
+
+.Songs {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.Songcard {
+    position: relative;
+    flex: 0 0 180px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background-color: #181818;
+    border-radius: 8px;
+    padding: 10px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.Songcard:hover {
+    background-color: #282828;
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+.Songcard img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.Songcard .overlay {
+    position: absolute;
+    bottom:0%;
+    right: 0%;
+    transform: translate(-50%, -50%);
+    color: black;
+    border-radius: 50%;
+    padding: 15px;
+    background-color: #1DB954;
+    font-size: 20px;
+    display: none;
+}
+
+.detail {
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.detail div:last-child {
+    font-size: 13px;
+    color: #b3b3b3;
+}
+
+.popular-artists {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 800px;
+    font-family: "Spotify Mix", "Circular", "Proxima Nova", "Montserrat", system-ui, sans-serif;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.Artists {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 10px 10px;
+}
+
+.Artists::-webkit-scrollbar {
+    display: none;
+}
+
+.Artists {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.Songcard:hover .overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container::-webkit-scrollbar, 
+.Songs::-webkit-scrollbar, 
+.Artists::-webkit-scrollbar {
+    display: none;
+}
+
+.container, .Songs, .Artists {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.ArtistCard {
+    position: relative;
+    flex: 0 0 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    background-color: #181818;
+    border-radius: 8px;
+    padding: 10px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.ArtistCard:hover {
+    background-color: #282828;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.ArtistCard img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.ArtistCard .overlay {
+    position: absolute;
+    bottom:0%;
+    right: 0%;
+    transform: translate(-50%, -50%);
+    color: black;
+    border-radius: 50%;
+    padding: 15px;
+    background-color: #1DB954;
+    font-size: 20px;
+    display: none;
+}
+
+.ArtistCard:hover .overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.artist-name {
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.main-footer {
+    background-color: #121212;
+    color: #b3b3b3;
+    padding: 40px 60px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #2a2a2a;
+    padding-bottom: 30px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+
+.footer-links h4 {
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: #b3b3b3;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+    color: #fff;
+}
+
+.footer-socials {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.footer-socials a {
+    background: #222;
+    color: #fff;
+    font-size: 18px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.3s ease;
+}
+
+.footer-socials a:hover {
+    background: #1db954;
+}
+
+.footer-bottom {
+    text-align: left;
+    margin-top: 20px;
+    font-size: 13px;
+    color: #777;
+}
+
+footer {
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(90deg, #af2896, #509bf5);
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    z-index: 1000;
+    font-family: "Spotify Mix", "Circular", "Proxima Nova", "Montserrat", system-ui, sans-serif;
+    box-sizing: border-box;
+}
+
+
+.foot {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.foot1 {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 14px;
+}
+
+.foot1 div:first-child {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.foot2 {
+    background-color: #fff;
+    color: #000;
+    font-weight: 600;
+    padding: 10px 24px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.foot2:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}

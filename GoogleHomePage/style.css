@@ -1,0 +1,195 @@
+#googly{
+    margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: linear-gradient(135deg, #4285f4, #34a853, #fbbc05, #ea4335);
+  background-size: 400% 400%;
+  animation: gradientBG 12s ease infinite;
+}
+.Navbar {
+    display: flex;
+    align-items: center;
+    background: #f1f3f4;
+    padding: 6px 10px;
+    font-family: Arial, sans-serif;
+    height: 48px;
+    border-bottom: 1px solid #dadce0;
+    gap: 12px;
+  }
+  
+  .Navbar .arrow-left,
+  .Navbar .arrow-right,
+  .Navbar .refresh {
+    font-size: 18px;
+    color: #5f6368;
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 50%;
+    transition: background 0.2s;
+  }
+  
+  .Navbar .arrow-left:hover,
+  .Navbar .arrow-right:hover,
+  .Navbar .refresh:hover {
+    background: #e8eaed;
+  }
+  .fullSearchbar {
+    display: flex;
+    align-items: center;
+    background: white;
+    flex: 1; 
+    border-radius: 24px;
+    padding: 4px 10px;
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.15);
+    border: 1px solid #dadce0;
+  }
+  .searchbar {
+    flex: 1;
+    border: none;
+    outline: none;     
+    font-size: 16px;
+    padding: 8px;
+    background: transparent;
+  }
+  
+  
+  .fullSearchbar .googlelogo {
+    color: #4285f4;
+    font-size: 18px;
+    margin-right: 8px;
+  }
+  
+  .fullSearchbar .searchbar {
+    flex: 1;
+    height: 20px;
+    outline: none;
+  }
+  
+  .fullSearchbar .star {
+    color: #5f6368;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 8px;
+  }
+  
+  .icon {
+    font-size: 18px;
+    color: #5f6368;
+    cursor: pointer;
+  }
+  
+  .line {
+    color: #dadce0;
+    font-size: 20px;
+  }
+
+  .mailicon {
+    font-size: 20px;
+    color: #5f6368;
+    cursor: pointer;
+  }
+  .control {
+    font-size: 18px;
+    color: #5f6368;
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 50%;
+    transition: background 0.2s;
+  }
+  .control:hover {
+    background: #e8eaed;
+  }
+  .main {
+    width: 100%;
+    text-align: center;
+    /* margin-top: 80px; */
+    background: linear-gradient(to right, #e0f7fa, #e1bee7);
+    /* border-radius: 20px; */
+    /* padding: 40px; */
+    display: inline-block;
+    height: 42vw;
+}
+@keyframes gradientBG {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+  }
+  
+.heading {
+    padding-top: 60px;
+    font-size: 80px;
+    font-weight: 400;
+    color: blue;
+    font-family: 'Product Sans', 'Roboto', sans-serif;
+    margin-bottom: 30px;
+}
+.o{
+    color: red;
+}
+.o2{
+    color: yellow;
+}
+.g{
+    color: #4285f4;
+}
+.l{
+    color: #34a853;
+}
+.e{
+    color: red;
+}
+.centerSearch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    height: 44px;
+    margin: 0 auto;
+    max-width: 584px;
+    padding: 0 14px;
+    box-shadow: none;
+    transition: box-shadow 0.2s ease-in-out;
+  }
+  
+  .centerSearch:focus-within {
+    box-shadow: 0 1px 6px rgba(32,33,36,.28);
+    border-color: transparent;
+  }
+.buttons {
+    margin-top: 20px;
+}
+.search {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    line-height: 22px;
+    background: transparent;
+    padding: 0 10px;
+  }
+  .search-icon {
+    color: #9aa0a6;
+    font-size: 16px;
+  }
+  .mic-icon, .camera-icon {
+    color: #4285f4;
+    font-size: 18px;
+    margin-left: 10px;
+  }
+
+.gbtn {
+    background: #f8f9fa;
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+    padding: 10px 20px;
+    margin: 6px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.gbtn:hover {
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
