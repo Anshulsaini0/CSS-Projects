@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Projects - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            margin-bottom: 50px;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+        }
+
+        .project-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            color: white;
+        }
+
+        .project-header h2 {
+            font-size: 1.5em;
+            margin-bottom: 5px;
+        }
+
+        .project-body {
+            padding: 20px;
+        }
+
+        .project-description {
+            color: #666;
+            margin-bottom: 15px;
+            line-height: 1.6;
+            font-size: 0.95em;
+        }
+
+        .project-link {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: opacity 0.3s ease;
+        }
+
+        .project-link:hover {
+            opacity: 0.9;
+        }
+
+        .footer {
+            text-align: center;
+            color: white;
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 2px solid rgba(255,255,255,0.2);
+        }
+
+        .footer p {
+            font-size: 0.9em;
+        }
+
+        .github-link {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .github-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎨 CSS Projects Portfolio</h1>
+        
+        <div class="projects-grid">
+            <!-- Airbnb Clone -->
+            <div class="project-card">
+                <div class="project-header">
+                    <h2>🏠 Airbnb Clone</h2>
+                </div>
+                <div class="project-body">
+                    <p class="project-description">Airbnb-inspired landing page with responsive design and modern CSS styling.</p>
+                    <a href="/airbnb/" class="project-link">View Project →</a>
+                </div>
+            </div>
+
+            <!-- Apple Clone -->
+            <div class="project-card">
+                <div class="project-header">
+                    <h2>🍎 Apple Homepage</h2>
+                </div>
+                <div class="project-body">
+                    <p class="project-description">Apple's official website recreation featuring sleek design and premium styling.</p>
+                    <a href="/apple/" class="project-link">View Project →</a>
+                </div>
+            </div>
+
+            <!-- Google Homepage -->
+            <div class="project-card">
+                <div class="project-header">
+                    <h2>🔍 Google Homepage</h2>
+                </div>
+                <div class="project-body">
+                    <p class="project-description">Google search page clone with minimalist design and clean interface.</p>
+                    <a href="/google/" class="project-link">View Project →</a>
+                </div>
+            </div>
+
+            <!-- Instagram Login -->
+            <div class="project-card">
+                <div class="project-header">
+                    <h2>📷 Instagram Login</h2>
+                </div>
+                <div class="project-body">
+                    <p class="project-description">Instagram login page replica with form styling and responsive layout.</p>
+                    <a href="/instagram/" class="project-link">View Project →</a>
+                </div>
+            </div>
+
+            <!-- Spotify Clone -->
+            <div class="project-card">
+                <div class="project-header">
+                    <h2>🎵 Spotify Clone</h2>
+                </div>
+                <div class="project-body">
+                    <p class="project-description">Spotify music streaming interface design with modern UI/UX principles.</p>
+                    <a href="/spotify/" class="project-link">View Project →</a>
+                </div>
+            </div>
+
+            <!-- YouTube Clone -->
+            <div class="project-card">
+                <div class="project-header">
+                    <h2>▶️ YouTube Clone</h2>
+                </div>
+                <div class="project-body">
+                    <p class="project-description">YouTube video platform interface replica with grid layout and styling.</p>
+                    <a href="/youtube/" class="project-link">View Project →</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Created by <strong>Anshul Saini</strong></p>
+            <p><a href="https://github.com/Anshulsaini0/CSS-Projects" class="github-link">View on GitHub →</a></p>
+            <p style="margin-top: 10px; font-size: 0.85em; opacity: 0.8;">© 2026 CSS Projects. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+{
+  "buildCommand": "echo 'Building static files...'",
+  "outputDirectory": ".",
+  "framework": "static",
+  "rewrites": [
+    {
+      "source": "/airbnb",
+      "destination": "/airbnb/air.html"
+    },
+    {
+      "source": "/airbnb/",
+      "destination": "/airbnb/air.html"
+    },
+    {
+      "source": "/apple",
+      "destination": "/Apple/index.html"
+    },
+    {
+      "source": "/apple/",
+      "destination": "/Apple/index.html"
+    },
+    {
+      "source": "/google",
+      "destination": "/GoogleHomePage/index.html"
+    },
+    {
+      "source": "/google/",
+      "destination": "/GoogleHomePage/index.html"
+    },
+    {
+      "source": "/instagram",
+      "destination": "/Insta login page/insta.html"
+    },
+    {
+      "source": "/instagram/",
+      "destination": "/Insta login page/insta.html"
+    },
+    {
+      "source": "/spotify",
+      "destination": "/spotifypage/spot.html"
+    },
+    {
+      "source": "/spotify/",
+      "destination": "/spotifypage/spot.html"
+    },
+    {
+      "source": "/youtube",
+      "destination": "/Youtubeclone/youtube.html"
+    },
+    {
+      "source": "/youtube/",
+      "destination": "/Youtubeclone/youtube.html"
+    }
+  ]
+}
